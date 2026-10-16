@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<!-- viewport нужен для корректного масштабирования на смартфонах и планшетах -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Учебный сайт яхт-клуба Морская волна: парусный спорт, морские прогулки и обучение.">
+<title>Яхт-клуб «Морская волна»</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== Шапка сайта ===== -->
+<header class="site-header">
+    <div class="header-inner">
+        <a class="logo" href="#home">Яхт-клуб «Морская волна»</a>
+
+        <!-- Бургер-меню для мобильных: работает без JavaScript, через скрытый checkbox -->
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav"><span></span></button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+            <ul>
+                <li><a href="#about">О клубе</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#gallery">Фотогалерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===== Главная секция (обложка) ===== -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <p class="hero-kicker">Парусный спорт · Отдых на воде</p>
+            <h1>Путешествуйте по морским просторам вместе с нами!</h1>
+            <p class="hero-text">Наслаждайтесь парусным спортом и отдыхом на воде — с опытными шкиперами и вниманием к безопасности.</p>
+            <a class="btn" href="#contact">Записаться на выход</a>
+        </div>
+    </section>
+
+    <!-- ===== О клубе ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Наш клуб приглашает любителей морского отдыха</h2>
+            <p class="lead">Мы предлагаем обучение парусному спорту, аренду яхт и проведение морских прогулок. Для нас важны безопасность, комфорт и ощущение свободы, которое дарит ветер в парусах.</p>
+
+            <ul class="stats">
+                <li><strong>15 лет</strong><span>на воде</span></li>
+                <li><strong>24 яхты</strong><span>в собственном флоте</span></li>
+                <li><strong>1200+</strong><span>выпускников школы</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ===== Услуги ===== -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="cards">
+                <article class="card">
+                    <span class="card-num">01</span>
+                    <h3>Аренда яхт</h3>
+                    <p>Яхты разных классов — с капитаном или без, на несколько часов или на целые сутки.</p>
+                </article>
+                <article class="card">
+                    <span class="card-num">02</span>
+                    <h3>Курсы парусного спорта</h3>
+                    <p>Обучение с нуля: теория, практика на воде и подготовка к капитанскому удостоверению.</p>
+                </article>
+                <article class="card">
+                    <span class="card-num">03</span>
+                    <h3>Корпоративные мероприятия</h3>
+                    <p>Регаты, тимбилдинги и праздники на борту для команд до 30 человек.</p>
+                </article>
+                <article class="card">
+                    <span class="card-num">04</span>
+                    <h3>Морские прогулки</h3>
+                    <p>Закатные и ночные выходы, романтические прогулки и семейный отдых на воде.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Фотогалерея ===== -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Яхты, регаты и жизнь у моря</h2>
+            <div class="gallery-images">
+                <img src="img/yacht1.jpg" alt="Парусные яхты в морской регате" loading="lazy" decoding="async" width="800" height="540">
+                <img src="img/yacht2.jpg" alt="Парусники на открытой воде" loading="lazy" decoding="async" width="800" height="540">
+                <img src="img/yacht3.jpg" alt="Участники регаты на парусной лодке" loading="lazy" decoding="async" width="800" height="540">
+                <img src="img/yacht4.jpg" alt="Парусное судно на закате" loading="lazy" decoding="async" width="800" height="540">
+                <img src="img/yacht5.jpg" alt="Яхты на регате в заливе Наррагансетт" loading="lazy" decoding="async" width="800" height="540">
+                <img src="img/yacht6.jpg" alt="Лодки и парусники у причала на закате" loading="lazy" decoding="async" width="800" height="540">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Обратная связь / бронирование ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container narrow">
+            <h2>Свяжитесь с нами</h2>
+            <p class="lead">Попробуйте заполнить форму бронирования. Это учебный макет: данные не отправляются и не сохраняются.</p>
+
+            <form id="contact-form" class="contact-form" action="#" method="get">
+                <div class="row">
+                    <label>Имя
+                        <input type="text" name="name" placeholder="Ваше имя" maxlength="80" required>
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" placeholder="Ваш email" required>
+                    </label>
+                </div>
+                <div class="row">
+                    <label>Услуга
+                        <select name="service">
+                            <option>Аренда яхты</option>
+                            <option>Курсы парусного спорта</option>
+                            <option>Корпоративное мероприятие</option>
+                            <option>Морская прогулка</option>
+                        </select>
+                    </label>
+                    <label>Желаемая дата
+                        <input type="date" name="date">
+                    </label>
+                </div>
+                <label>Сообщение
+                    <textarea name="message" rows="4" placeholder="Ваше сообщение"></textarea>
+                </label>
+                <button class="btn" type="submit">Проверить заявку</button>
+                <noscript>Для демонстрации формы включите JavaScript. Заявки на этом учебном сайте не принимаются.</noscript>
+                <p id="form-status" class="form-status" role="status"></p>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== Подвал сайта ===== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>Яхт-клуб «Морская волна»</h3>
+            <p>Парусный спорт, аренда яхт и отдых на воде.</p>
+        </div>
+        <div>
+            <h3>Контакты учебного клуба</h3>
+            <p>г. Ростов-на-Дону, наб. Дона, причал №5</p>
+            <p>Контактные данные приведены для примера.</p>
+            <p><a href="mailto:info@sea-wave.example">info@sea-wave.example</a></p>
+        </div>
+        <div>
+            <h3>Режим работы</h3>
+            <p>Ежедневно с 9:00 до 21:00</p>
+            <p>Навигационный сезон: апрель — октябрь</p>
+        </div>
+    </div>
+    <p class="project-note">Учебный проект. Клуб и его показатели вымышлены. Фотографии иллюстрируют морскую тематику. <a href="credits.html">Источники фотографий</a>.</p>
+    <p class="copyright">Яхт-клуб «Морская волна», 2025—<span id="year">2026</span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
